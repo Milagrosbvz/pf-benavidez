@@ -1,0 +1,37 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+/*Estilos de Header*/
+
+.logo {
+    img {
+        display: inline;
+        align-content: center;
+        width: 350px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+header {
+    @include flex(column,center,center);
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    text-align: center;
+    background-color: nth($color,4);
+    padding: 10px;
+    margin: 0;
+
+    .logo{
+        img{
+            width: 240px;
+        }
+    }
+}
+
+a:active {
+    background-color: nth($color,5);
+    color: nth($color,7);
+}

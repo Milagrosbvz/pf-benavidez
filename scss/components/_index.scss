@@ -1,0 +1,73 @@
+@import"../base/mixin";
+@import"../base/variables";
+
+/*Estilos del Index*/
+
+/*Mobile*/
+
+.presentacion-grid{
+    @include flex(column,center,center);
+    background-image: url(https://images.pexels.com/photos/9958000/pexels-photo-9958000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    opacity: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5em;
+    margin: auto;
+
+    .presentacion-uno{
+        background-color: nth ($color, 2);
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+
+        .titulo-index{
+            font-size: 1.5em;
+            background-color: nth($color, 2);
+            border-radius: $border - 10;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    .presentacion-dos{
+        @include flex(column, center,center);
+
+        .texto{
+            font-size: 1.2rem;
+            text-align: center;
+            background-color: nth($color,2);
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: $border;
+
+            p{
+                margin-top: 15px;
+            }
+        }
+
+        .video{
+            
+            video{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*Imagenes index*/
+
+.grupo-imagenes{
+    @include grid(1fr,1fr);
+    width: 100%;
+    padding: 1.5em;
+    gap: 10px;
+
+    .imagenes-index{
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

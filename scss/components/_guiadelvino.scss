@@ -1,0 +1,60 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+/*Estilos de Guia del vino*/
+
+/*Mobile*/
+
+main {
+    font-size: 1.5em;
+    padding: .6em;
+
+    .texto-destacado {
+        text-align: center;
+        font-size: 0.6em;
+        font-style: $italic;
+        background-color: nth($color, 5);
+        padding: .5em;
+        border-radius: $border - 10;
+    }
+}
+
+.tabla-clasificacion {
+
+    @include grid(1fr, 1fr);
+    gap: 30px;
+
+    .guia-texto {
+        font-size: 0.7em;
+        text-align: center;
+        padding: 2%;
+        font-style: $italic;
+        font-weight: bold;
+        margin-top: 0.2em;
+    }
+
+    .clasificacion {
+        @include flex(column, center, center);
+        text-align: center;
+        background-image: linear-gradient(to bottom, nth($color, 3), nth($color, 6));
+        border-radius: $border;
+        padding: 5%;
+        font-style: $italic;
+        h4{
+            font-size: 1em;
+        }
+
+        ul {
+            @include flex(column, center, center);
+            margin-right: 10%;
+            font-size: 0.7em;
+        }
+    }
+
+    .clasificacion-img {
+
+        img {
+            width: 250px;
+        }
+    }
+}

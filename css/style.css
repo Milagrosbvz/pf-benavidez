@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos de body*/
+/*Mobile*/
+body {
+  background-color: #EDF0DA;
+}
+
+/*Titulos*/
+h1 {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  animation: backInLeft 1s 0s cubic-bezier(0.6, -0.28, 0.735, 0.045) both;
+}
+@keyframes backInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px) scale(0.7);
+  }
+  80% {
+    transform: translateX(10px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/*Estilo de contacto*/
+/*Mobile*/
+.main {
+  background-image: url(../img/fondo-contacto.jpg);
+  margin: 10px auto;
+}
+.main .fondo-contacto {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0.2em;
+}
+.main .fondo-contacto .texto-vino {
+  margin-top: -30px;
+  font-size: 20px;
+  font-style: italic;
+}
+.main .fondo-contacto .formulario {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(168, 155, 140, 0.7803921569);
+  padding: 0.5em;
+  max-width: 1170px;
+  margin: 10px auto;
+}
+.main .fondo-contacto .formulario form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.main .fondo-contacto .formulario form .campo-formulario {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2em;
+}
+.main .fondo-contacto .formulario form .campo-formulario label,
+.main .fondo-contacto .formulario form .campo-formulario input,
+.main .fondo-contacto .formulario form .campo-formulario textarea {
+  width: 100%;
+  padding: 0.2em;
+  font-size: 20px;
+  text-align: center;
+}
+.main .fondo-contacto .formulario form .campo-formulario .boton {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.main .fondo-contacto .vino-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 20px;
+}
+.main .fondo-contacto .vino-flex img {
+  width: 100%;
+}
+
+/*Estilos de Eventos*/
+/*Mobile*/
+main .texto-vino h1 {
+  font-size: 1.7em;
+}
+main .carrusel-foto {
+  padding: 1.3em;
+}
+main .carrusel-foto .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 400px;
+}
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  background-color: rgba(241, 50, 114, 0.2666666667);
+}
+main .texto-destacado-dos {
+  background-color: rgba(216, 112, 147, 0.5803921569);
+  padding: 1em;
+  margin: 20px 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+main .texto-destacado-dos h4 {
+  text-align: center;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+/*Estilos de Footer*/
+/*Mobile*/
+.footer {
+  background-color: #A89B8C;
+  color: #A89B8C;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .texto-footer {
+  color: black;
+  text-align: center;
+}
+.footer .iconos {
+  display: flex;
+  gap: 20px;
+}
+.footer .iconos img {
+  height: 25px;
+  margin: 5px;
+}
+
+/*Estilos de Guia del vino*/
+/*Mobile*/
+main {
+  font-size: 1.5em;
+  padding: 0.6em;
+}
+main .texto-destacado {
+  text-align: center;
+  font-size: 0.6em;
+  font-style: italic;
+  background-color: rgba(216, 112, 147, 0.5803921569);
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+.tabla-clasificacion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+.tabla-clasificacion .guia-texto {
+  font-size: 0.7em;
+  text-align: center;
+  padding: 2%;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0.2em;
+}
+.tabla-clasificacion .clasificacion {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(241, 50, 114, 0.2666666667), rgba(145, 18, 60, 0.937254902));
+  border-radius: 30px;
+  padding: 5%;
+  font-style: italic;
+}
+.tabla-clasificacion .clasificacion h4 {
+  font-size: 1em;
+}
+.tabla-clasificacion .clasificacion ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  font-size: 0.7em;
+}
+.tabla-clasificacion .clasificacion-img img {
+  width: 250px;
+}
+
+/*Estilos de Header*/
+.logo img {
+  display: inline;
+  align-content: center;
+  width: 350px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  text-align: center;
+  background-color: #A89B8C;
+  padding: 10px;
+  margin: 0;
+}
+header .logo img {
+  width: 240px;
+}
+
+a:active {
+  background-color: rgba(216, 112, 147, 0.5803921569);
+  color: black;
+}
+
+/*Estilos del Index*/
+/*Mobile*/
+.presentacion-grid {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/9958000/pexels-photo-9958000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5em;
+  margin: auto;
+}
+.presentacion-grid .presentacion-uno {
+  background-color: nth #EDF0DA, rgba(168, 155, 140, 0.7803921569), rgba(241, 50, 114, 0.2666666667), #A89B8C, rgba(216, 112, 147, 0.5803921569), rgba(145, 18, 60, 0.937254902), black, rgba(168, 155, 140, 0.5254901961), 2;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.presentacion-grid .presentacion-uno .titulo-index {
+  font-size: 1.5em;
+  background-color: rgba(168, 155, 140, 0.7803921569);
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.presentacion-grid .presentacion-dos {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion-grid .presentacion-dos .texto {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(168, 155, 140, 0.7803921569);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+}
+.presentacion-grid .presentacion-dos .texto p {
+  margin-top: 15px;
+}
+.presentacion-grid .presentacion-dos .video video {
+  width: 100%;
+}
+
+/*Imagenes index*/
+.grupo-imagenes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  padding: 1.5em;
+  gap: 10px;
+}
+.grupo-imagenes .imagenes-index img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilos de Maridamos*/
+/*Mobile*/
+.tipos-maridaje {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 1.3em;
+  font-style: italic;
+}
+.tipos-maridaje .titulo-maridaje {
+  text-align: center;
+  font-size: 1.7em;
+  background-color: rgba(168, 155, 140, 0.7803921569);
+  letter-spacing: 5px;
+  border-radius: 10px;
+  padding: 1em;
+}
+.tipos-maridaje div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(241, 50, 114, 0.2666666667), rgba(145, 18, 60, 0.937254902));
+  gap: 10px;
+  padding: 1em;
+  border-radius: 30px;
+}
+.tipos-maridaje div p {
+  text-align: center;
+}
+.tipos-maridaje div img {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+/*mq tablet*/
+@media (min-width: 768px) {
+  /*body*/
+  h1 {
+    font-size: 2em;
+  }
+  /*Index*/
+  .presentacion-grid .presentacion-uno .titulo-index {
+    font-size: 1.9em;
+    width: 80%;
+  }
+  .presentacion-grid .presentacion-dos .texto {
+    width: 80%;
+  }
+  .presentacion-grid .presentacion-dos .video {
+    width: 80%;
+  }
+  /*Grupo de imagenes*/
+  .grupo-imagenes {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .grupo-imagenes .imagenes-index:last-of-type {
+    grid-column: span 2;
+  }
+  /*Guia del vino*/
+  .main section .texto-destacado {
+    width: 10%;
+    padding: 1em;
+    text-align: center;
+  }
+  .main .tabla-clasificacion {
+    padding: 3em;
+    margin-bottom: 0.1%;
+  }
+  .main .tabla-clasificacion .clasificacion ul {
+    margin-right: 5%;
+  }
+  .main .tabla-clasificacion .clasificacion .clasificacion-img img {
+    width: 400px;
+  }
+  /*Meridamos*/
+  .texto-vino .texto-destacado {
+    margin-top: 30px;
+  }
+  .tipos-maridaje {
+    padding: 2.5em;
+    margin: 0 30px;
+  }
+  .tipos-maridaje div img {
+    width: 70%;
+    height: 70%;
+  }
+  .tipos-maridaje div h5 {
+    font-size: 1.8em;
+  }
+  .tipos-maridaje div p {
+    width: 80%;
+  }
+  /*eventos*/
+  main .carrusel-foto {
+    padding: 0;
+  }
+  main .carrusel-foto .carousel {
+    margin: 0 25%;
+  }
+  main .carrusel-foto .carousel-inner .carousel-item img {
+    width: 50%;
+    height: 500px;
+  }
+  /*Contacto*/
+  .main .fondo-contacto {
+    padding: 0.2em;
+  }
+  .main .fondo-contacto .texto-vino {
+    margin-top: -40px;
+  }
+  .main .fondo-contacto .formulario {
+    padding: 1em;
+  }
+  .main .fondo-contacto .formulario form {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .main .fondo-contacto .formulario form .campo-formulario {
+    text-align: center;
+  }
+  .main .fondo-contacto .formulario form .campo-formulario:nth-last-child(2) {
+    grid-column: span 2;
+  }
+  .main .fondo-contacto .formulario form .flex {
+    grid-column: span 2;
+  }
+  .main .fondo-contacto .vino-flex {
+    flex-flow: row wrap;
+  }
+  .main .fondo-contacto .vino-flex img {
+    width: 45%;
+    height: 100%;
+  }
+}
+/*MQ DESKTOP*/
+@media (min-width: 1024px) {
+  /*body*/
+  .presentacion-grid .presentacion-uno .titulo-index {
+    width: 100%;
+    font-size: 2.4rem;
+  }
+  .presentacion-grid .presentacion-dos .texto {
+    font-size: 1.5rem;
+  }
+  /*Grupo de imagenes*/
+  .grupo-imagenes {
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    padding: 3em;
+  }
+  .grupo-imagenes .imagenes-index:last-of-type {
+    grid-column: span 1;
+  }
+  /*Guia del vino*/
+  main section .texto-destacado {
+    font-size: 1em;
+    width: 80%;
+    padding: 1.2em;
+    margin: 1.5em 8em;
+  }
+  .tabla-clasificacion {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: 20% 1fr;
+  }
+  .tabla-clasificacion .guia-texto {
+    grid-column: span 2;
+    font-size: 1em;
+  }
+  .tabla-clasificacion .clasificacion {
+    padding: 2em;
+  }
+  .tabla-clasificacion .clasificacion h4 {
+    font-size: 180%;
+  }
+  .tabla-clasificacion .clasificacion ul {
+    margin-right: 3%;
+  }
+  .tabla-clasificacion .clasificacion .clasificacion-img img {
+    width: 500px;
+    height: 200px;
+  }
+  /*Maridamos*/
+  main div .texto-destacado {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+  .tipos-maridaje {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .tipos-maridaje .titulo-maridaje {
+    grid-column: span 2;
+  }
+  /*Eventos*/
+  main .carrusel-foto .carousel {
+    margin: 0 30%;
+  }
+  main .carrusel-foto .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 40em;
+  }
+  /*Contacto*/
+  .main .fondo-contacto .vino-flex img {
+    width: 20%;
+    height: 50%;
+  }
+}
+/*MQ Fotos*/
+@media (min-width: 1400px) {
+  /*Eventos*/
+  main .carrusel-foto .carousel {
+    margin: 0 35%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

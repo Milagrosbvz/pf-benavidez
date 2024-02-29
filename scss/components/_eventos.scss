@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+/*Estilos de Eventos*/
+
+/*Mobile*/
+
+main {
+
+    .texto-vino{
+
+        h1{
+            font-size: 1.7em;
+        }
+    }
+
+    .carrusel-foto {
+
+        padding: 1.3em;
+
+        .carousel-inner {
+
+            .carousel-item {
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: nth($color, 3);
+    }
+
+    .texto-destacado-dos {
+        background-color: nth($color, 5);
+        padding: 1em;
+        margin: 20px 20px;
+        border-radius: $border;
+        text-align: center;
+
+        h4 {
+            text-align: center;
+            font-size: 0.8em;
+            font-style: $italic;
+        }
+    }
+
+}

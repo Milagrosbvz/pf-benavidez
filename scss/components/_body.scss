@@ -1,0 +1,34 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+/*Estilos de body*/
+
+/*Mobile*/
+
+body {
+    background-color: nth($color, 1);
+}
+
+//Titulos
+/*Titulos*/
+
+h1 {
+    @include titulos(1.7em);
+    @include animation-backInLeft(1s);
+
+    @keyframes backInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-800px) scale(0.7);
+        }
+
+        80% {
+            transform: translateX(10px) scale(0.9);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+}

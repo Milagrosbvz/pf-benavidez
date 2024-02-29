@@ -1,0 +1,28 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+/*Estilos de Footer*/
+
+/*Mobile*/
+
+.footer {
+    background-color: nth($color, 4);
+    color: nth($color, 4);
+    padding: 20px;
+    @include flex(column, center, center);
+
+    .texto-footer {
+        color: nth($color, 7);
+        text-align: center;
+    }
+
+    .iconos {
+        display: flex;
+        gap: 20px;
+
+        img{
+            height: 25px;
+            margin: 5px;
+        }
+    }
+}
